@@ -14,5 +14,8 @@
     "typescript": "^4.9.4"
   },
   "dependencies": {
+    "@types/numeral": "^2.0.2",
+    "iter-ops": "^3.0.7",
+    "numeral": "^2.0.6"
   }
 }

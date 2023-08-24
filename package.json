@@ -1,21 +1,31 @@
 {
-  "name": "mail_parser",
-  "version": "1.0.0",
-  "description": "",
-  "type": "module",
-  "main": "build\\index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@types/node": "^18.11.18",
-    "typescript": "^4.9.4"
-  },
-  "dependencies": {
-    "@types/numeral": "^2.0.2",
-    "iter-ops": "^3.0.7",
-    "numeral": "^2.0.6"
-  }
+    "name": "mail_parser",
+    "version": "1.0.0",
+    "description": "",
+    "type": "module",
+    "main": "build/index.js",
+    "scripts": {
+        "start": "npx tsc && node build/index.js",
+        "build": "npx tsc",
+        "clean": "npx tsc --clean",
+        "lint": "npx eslint ./src/**/*",
+        "format": "npx prettier --write \"**/*.+(ts|json)\"",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "watch": "npx watch"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/node": "^18.16.19",
+        "eslint": "^8.33.0",
+        "pretier": "^0.0.1",
+        "typescript": "^4.9.4",
+        "typescript-eslint": "^0.0.1-alpha.0"
+    },
+    "dependencies": {
+        "@types/numeral": "^2.0.2",
+        "iter-ops": "^3.0.7",
+        "numeral": "^2.0.6",
+        "rxjs": "^7.8.1"
+    }
 }
